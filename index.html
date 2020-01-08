@@ -23,7 +23,24 @@
         </div>
         <div class="form-group">
             <label for="age" id="age-label">Age</label>
-            <input type="number" id="number" name="age" class="form-control" placeholder="Age">
+            <input type="number" id="number" name="age" class="form-control" placeholder="Age" min="17" max="25">
+        </div>
+        <div class="form-group">
+            <p>Which option best describes your current role?</p>
+            <select name="role" id="dropdown" class="form-control" required>
+                <option disabled selected value>Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full time job</option>
+                <option value="leaner">Full time learner</option>
+                <option value="prefer">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div>
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label name="user" value="definetily" type="radio" class="input-radio" checked>Definetily</label>
+            <label name="user" value="maybe" type="radio" class="input-radio" checked>Maybe</label>
+            <label name="user" value="not sure" type="radio" class="input-radio" checked>Not sure</label>
         </div>
         
     </form>
